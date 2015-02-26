@@ -4,7 +4,11 @@ The science visualization resources you didn't know you had.  Materials compleme
 Topics covered:
 
 * Git/GitHub
+    https://github.com/wildintellect/ucdthesis - repo for LaTeX formatting of dissertation
 * Rmarkdown
+   http://cpsievert.github.io/slides/markdown/#/5
 * ggplot2 and resources
 * Glue
 * Cloudup
+* Image Quilts
+* Slidify
