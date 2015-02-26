@@ -4,6 +4,7 @@ The science visualization resources you didn't know you had.  Materials compleme
 Topics covered:
 
 * Git/GitHub
+* Rmarkdown
 * ggplot2 and resources
 * Glue
 * Cloudup
