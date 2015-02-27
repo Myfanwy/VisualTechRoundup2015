@@ -12,3 +12,10 @@ Topics covered:
 * Cloudup
 * Image Quilts
 * Slidify
+* Twitter lists/users/hashtags
+
+
+Links:
+Jenny Bryan's Fields talk:
+http://www.fields.utoronto.ca/video-archive/static/2015/02/318-4374/mergedvideo.ogv
+
