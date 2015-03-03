@@ -8,6 +8,8 @@ The science visualization resources you didn't know you had.  Materials compleme
 * Rmarkdown
    http://cpsievert.github.io/slides/markdown/#/5
 * ggplot2 and resources
+    - Figures 4.10, 4.11, 4.20 (good)
+    - Figures 2.13 (bad)
 * Glue
 * Cloudup
 * Image Quilts
