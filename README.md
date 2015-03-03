@@ -11,6 +11,8 @@ Topics covered:
 * Glue
 * Cloudup
 * Image Quilts
+
+#Topics Not Covered, but included in the Gist page:
 * Slidify
 * Twitter lists/users/hashtags
 
