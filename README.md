@@ -16,8 +16,9 @@ Topics covered:
 
 
 #Links:
-[Jenny Bryan's Fields talk:](http://www.fields.utoronto.ca/video-archive/static/2015/02/318-4374/mergedvideo.ogv) 
----
-[The R Graph Catalog:](http://shinyapps.stat.ubc.ca/r-graph-catalog/)
+
+[Jenny Bryan's Fields talk](http://www.fields.utoronto.ca/video-archive/static/2015/02/318-4374/mergedvideo.ogv) 
+
+[The R Graph Catalog](http://shinyapps.stat.ubc.ca/r-graph-catalog/)
 
 
