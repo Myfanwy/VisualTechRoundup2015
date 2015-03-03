@@ -1,7 +1,7 @@
 # VisualTechRoundup2015
 The science visualization resources you didn't know you had.  Materials complementing the presentation at UCD Animal Behavior Student Conference (2015)
 
-Topics covered:
+###Topics covered:
 
 * Git/GitHub
     https://github.com/wildintellect/ucdthesis - repo for LaTeX formatting of dissertation
@@ -12,7 +12,7 @@ Topics covered:
 * Cloudup
 * Image Quilts
 
-#Topics Not Covered, but included in the Gist page:
+####Topics Not Covered, but included in the Gist page:
 * Slidify
 * Twitter lists/users/hashtags
 
