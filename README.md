@@ -27,4 +27,5 @@ The science visualization resources you didn't know you had.  Materials compleme
 
 [The R Graph Catalog](http://shinyapps.stat.ubc.ca/r-graph-catalog/)
 
+[Zev Ross' ggplot2 cheatsheet](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/)
 
