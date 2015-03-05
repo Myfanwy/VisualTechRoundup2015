@@ -19,9 +19,11 @@ The science visualization resources you didn't know you had.  Materials compleme
 * Twitter lists/users/hashtags
 
 
-#Links:
+##Links:
 
-[Jenny Bryan's Fields talk](http://www.fields.utoronto.ca/video-archive/static/2015/02/318-4374/mergedvideo.ogv) 
+[Jenny Bryan's Fields talk](http://www.fields.utoronto.ca/video-archive/static/2015/02/318-4374/mergedvideo.ogv)
+
+[Stat545's page on creating effective graphs](https://stat545-ubc.github.io/block015_graph-dos-donts.html)
 
 [The R Graph Catalog](http://shinyapps.stat.ubc.ca/r-graph-catalog/)
 
