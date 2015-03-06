@@ -3,21 +3,22 @@ The science visualization resources you didn't know you had.  Materials compleme
 
 ###Topics covered:
 
+* Workflows in R for data analysis, visualization, and sharing
 * Git/GitHub
     https://github.com/wildintellect/ucdthesis - repo for LaTeX formatting of dissertation
 * Rmarkdown
    http://cpsievert.github.io/slides/markdown/#/5
+
+
+####Topics Not Covered, but included in the Gist page:
+* Slidify
+* Twitter lists/users/hashtags
 * ggplot2 and resources
     - Figures 4.10, 4.11, 4.20 (good)
     - Figures 2.13 (bad)
 * Glue
 * Cloudup
 * Image Quilts
-
-####Topics Not Covered, but included in the Gist page:
-* Slidify
-* Twitter lists/users/hashtags
-
 
 ##Links:
 
