@@ -440,8 +440,98 @@ Tag life study (~1/64 of my dissertation)
 ===============
 this slide is blank on purpose
 
+
+You promised us interactive visualizations
 =============================================
+<br>
+These can be achieved with:
+
+  - Shiny Apps
+  <br>
+  - ggvis (similar to ggplot2, but designed with interactive graphs in mind)
+  
+  - D3
+
+ShinyApps
+==================================
+Composed of two code files.  
+    1: A User interface (ui.r) that defines the 'look' of the app online.
+```{r, eval=FALSE}
+library(shiny)
+shinyUI(fluidPage(
+  # Application title
+  titlePanel("Hello Haleys!"),
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("x", "Minimum number of girls with that name", min=5, max = 80000, value = 50,
+                  step=500, round = TRUE, width = '100%'),
+      actionButton("goButton", label = "Nope, hate 'em, try again") ),
+    mainPanel(
+      tableOutput("y")
+    ))
+))
+```
+
+ShinyApps
+===========================
+  2.) A server file (server.r) that tells the server how to actually generate the plots.
+```{r, eval=FALSE}
+library(shiny)
+library(babynames)
+shinyServer(function(input, output) {
+  output$y <- renderTable({
+    input$goButton
+    dist <- isolate(babynames %>%
+                      filter(sex=='F', n > input$x) %>%
+                      sample_n(., 5) %>%
+                      select(year, name, n) %>%
+                      arrange(desc(n))
+  )
+    dist$year <- as.integer(dist$year)
+    print(dist)
+  }) 
+})
+```
+
+These two files combine to run a
+==========================
+  - [Shiny App on the internet](https://myfanwy.shinyapps.io/NameThatHaley/) (or in a markdown file)
+
+========
 <div align="center"> <img src="http://i.imgur.com/7sv6O2s.png"> </div>
+
+
+Summing Up
+=======================
+* When you work in R, work in Rmarkdown
+* When you make graphics, go straight to ggplot2.  Do not pass base graphics, do not pass qplot.  Proceed directly to ggplot2.
+* GitHub makes sense for data sanity, not just for publishing data on the web.
+* For interactive visualization, ShinyApps are one standalone way to go.  Otherwise, ggvis + GitHub Pages is a great option.
+
+
 
 =============================================
 <div align="center"> <img src="http://i.imgur.com/MbOkEJ8.gif" height=600> </div>
+
+
+Of course.
+================
+<br>
+This repo on [GitHub](https://github.com/Myfanwy/VisualTechRoundup2015) - all materials, including slides in PDF
+<br>
+Also has links to more teaching resources on all these things
+
+Hey Thanks!  Especially:
+===========================
+<br>
+Noam Ross / Davis R-Users Group
+<br> <br>
+Dr. Jennifer Bryan (thanks for the Fields talk inspiration)
+<br> <br>
+Carson Sievert, whose RMarkdown slides I forked from GitHub (see?  See how useful?)
+
+==============================
+<img src="http://i.giphy.com/b9QBHfcNpvqDK.gif">
+<br>
+
+Let's go eat a lot of food.
