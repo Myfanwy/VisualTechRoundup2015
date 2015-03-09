@@ -3,22 +3,12 @@ The science visualization resources you didn't know you had.  Materials compleme
 
 ###Topics covered:
 
+* Briefly: making better graphs
 * Workflows in R for data analysis, visualization, and sharing
 * Git/GitHub
     https://github.com/wildintellect/ucdthesis - repo for LaTeX formatting of dissertation
 * Rmarkdown
    http://cpsievert.github.io/slides/markdown/#/5
-
-
-####Topics Not Covered, but included in the Gist page:
-* Slidify
-* Twitter lists/users/hashtags
-* ggplot2 and resources
-    - Figures 4.10, 4.11, 4.20 (good)
-    - Figures 2.13 (bad)
-* Glue
-* Cloudup
-* Image Quilts
 
 ##Links:
 
@@ -29,4 +19,6 @@ The science visualization resources you didn't know you had.  Materials compleme
 [The R Graph Catalog](http://shinyapps.stat.ubc.ca/r-graph-catalog/)
 
 [Zev Ross' ggplot2 cheatsheet](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/)
+
+[Robert Simmmon's excellent pdf on transforming data for visualization](https://www.dropbox.com/s/yq9bzoavnj7bsc4/NICAR_2015_simmon_20150306.pdf?n=6155)
 
