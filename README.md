@@ -1,5 +1,5 @@
 # VisualTechRoundup2015
-The science visualization resources you didn't know you had.  Materials complementing the presentation at UCD Animal Behavior Student Conference (2015)
+The data organization and visualization resources you didn't know you had.  Materials complementing the presentation at UCD Animal Behavior Student Conference (March 7, 2015).
 
 ###Topics covered:
 
@@ -21,4 +21,6 @@ The science visualization resources you didn't know you had.  Materials compleme
 [Zev Ross' ggplot2 cheatsheet](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/)
 
 [Robert Simmmon's excellent pdf on transforming data for visualization](https://www.dropbox.com/s/yq9bzoavnj7bsc4/NICAR_2015_simmon_20150306.pdf?n=6155)
+
+[Carson Sievert's website full of dataviz goodies](http://cpsievert.github.io/)
 
