@@ -148,6 +148,8 @@ g <-ggplot(nmmaps, aes(x=season, y=o3)) + geom_violin(alpha=0.5, color="gray")+g
       position = position_jitter(width = 0.1))+coord_flip()
 g
 ```
+Graph tutorial credit: Zev Ross
+
 
 Good data visualization in the wild
 ==================================

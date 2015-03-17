@@ -62,6 +62,8 @@ Do This Instead
 Oo! New graphs!
 ========================================================
 ![plot of chunk unnamed-chunk-3](Slides_rpres-figure/unnamed-chunk-3-1.png) 
+Graph tutorial credit: Zev Ross
+
 
 Good data visualization in the wild
 ==================================
