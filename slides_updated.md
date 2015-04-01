@@ -47,104 +47,18 @@ Use a bar chart instead, or for trends across time, use a (single) stacked bar c
 No more grouped bar charts
 =======================================================
 <small>It is difficult to do meaningful visual comparison with grouped bar charts.</small>
-```{r, echo=FALSE, fig.height=8, fig.width=14}
-library(ggplot2)
-library(reshape2)
-
-this_base <- "fig08-01_gold-price-data"
-
-my_data <- data.frame( 
-  Year = 1979:1996,
-  Average = c(306, 615, 460, 376, 424, 361, 317, 368, 447, 437, 381, 
-              383.51, 362.11, 343.82, 359.77, 384, 383.79, 387.81),
-  High = c(510, 850, 599, 475, 505, 402, 340, 440, 500, 480,
-           415, 425, 405, 360, 415, 400, 400, 420),
-  Low = c(215, 480, 390, 298, 380, 306, 280, 330, 390, 395, 360,
-          350, 345, 330, 326, 370, 370, 366))
-
-my_data_long <- melt(my_data, id = "Year",
-                     variable.name = "stat", value.name = "price")
-my_data_long$stat <- factor(my_data_long$stat, c("High", "Average", "Low"))
-
-year_label <- my_data$Year
-year_label<- year_label[-seq(2, 18, 2)]
-
-p <- ggplot(my_data_long, aes(x = Year, y = price, 
-                           group = stat, fill = stat, width = 0.6)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  geom_bar(stat = "identity", position = "dodge", colour = "black", 
-           show_guide = FALSE) +
-  scale_fill_manual(values = c("High" = "grey30", "Average" = "grey70",
-                               "Low" = "grey50")) +
-  scale_x_continuous(breaks = seq(1979, 1996, 2), labels = year_label) +
-  scale_y_continuous(breaks = seq(0, 900, 100), limits = c(0, 900),
-                     expand = c(0, 0)) +
-  labs(x = NULL, y = "Gold Price (dollars)") +
-  ggtitle("Fig 8.1 Gold Price Data") +
-  theme_bw() +
-  theme(panel.grid.major.y = element_line(colour = "grey60"),
-        panel.grid.major.x = element_blank(),
-        panel.grid.minor = element_blank(),
-        plot.title = element_text(size = rel(1.2), face = "bold"),
-        legend.position = "top",
-        legend.title = element_blank())
-p
-
-```
+![plot of chunk unnamed-chunk-1](slides_updated-figure/unnamed-chunk-1-1.png) 
 
 Do This Instead
 =====================================================
 <small>For these data, this graph better allows the audience to read the trend for themselves.</small>
-```{r, echo=FALSE, fig.height=8, fig.width=14}
-library(ggplot2)
-
-this_base <- "fig08-02_gold-price-data-high-low-chart"
-
-my_data <- data.frame( 
-  Year = 1979:1996,
-  Average = c(306, 615, 460, 376, 424, 361, 317, 368, 447, 437, 381, 
-              383.51, 362.11, 343.82, 359.77, 384, 383.79, 387.81),
-  High = c(510, 850, 599, 475, 505, 402, 340, 440, 500, 480,
-           415, 425, 405, 360, 415, 400, 400, 420),
-  Low = c(215, 480, 390, 298, 380, 306, 280, 330, 390, 395, 360,
-          350, 345, 330, 326, 370, 370, 366))
-
-p <- ggplot(my_data, aes(x = Year, y = Average)) +
-  geom_point(shape = 95, size = 4) + 
-  geom_segment(aes(x = Year - 0.15, xend = Year - 0.15,
-                   y = Low, yend = High), hjust = 4) +
-  scale_x_continuous(breaks = seq(1975, 1995, 5), limits = c(1975, 1997),
-                     expand = c(0, 0)) +
-  scale_y_continuous(breaks = seq(100, 900, 100), limits = c(100, 950),
-                     expand = c(0, 0),
-                     labels = c(100, "", 300, "", 500, "", 700, "", 900)) +
-  labs(x = "Year", y = "Gold Price (dollars)") + 
-  ggtitle("Fig 8.2 Gold Price Data: High-Low Chart") +
-  theme_bw() +
-  theme(panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        plot.title = element_text(size = rel(1.2), face = "bold"))
-
-p
-
-```
+![plot of chunk unnamed-chunk-2](slides_updated-figure/unnamed-chunk-2-1.png) 
 
 
 Violin Jitter Plots
 ========================================================
 <small>Consider for data that has many observations distributed assymmetrically.</small>
-```{r, echo=FALSE, fig.height=7, fig.width=14} 
-
-library(ggplot2)
-nmmaps<-read.csv("chicago-nmmaps.csv", as.is=T)
-nmmaps$date<-as.Date(nmmaps$date)
-nmmaps<-nmmaps[nmmaps$date>as.Date("1996-12-31"),]
-nmmaps$year<-substring(nmmaps$date,1,4)
-
-g <-ggplot(nmmaps, aes(x=season, y=o3)) + geom_violin(alpha=0.5, color="gray")+geom_jitter(alpha=0.5, aes(color=season),
-      position = position_jitter(width = 0.1))+coord_flip()
-g
-```
+![plot of chunk unnamed-chunk-3](slides_updated-figure/unnamed-chunk-3-1.png) 
 <smaller> Graph tutorial credit: Zev Ross </smaller>
 
 
@@ -464,7 +378,8 @@ ShinyApps
 ==================================
 Composed of two code files.  
     1: A User interface (ui.r) that defines the 'look' of the app online.
-```{r, eval=FALSE}
+
+```r
 library(shiny)
 shinyUI(fluidPage(
   # Application title
@@ -483,7 +398,8 @@ shinyUI(fluidPage(
 ShinyApps
 ===========================
   2.) A server file (server.r) that tells the server how to actually generate the plots.
-```{r, eval=FALSE}
+
+```r
 library(shiny)
 library(babynames)
 shinyServer(function(input, output) {
