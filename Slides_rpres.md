@@ -2,12 +2,8 @@ Your Biennial Visual Tech Round-up
 ========================================================
 author: Myfanwy Johnston
 incremental: true
+<small>These slides have been edited from their original version.  They have been formatted for better understanding by people not present at the conference in March.</small>
 
-Your Survey Responses
-========================================================
-
-
-<img src = "http://i.imgur.com/qM4s4rC.jpg" height=800 align="right">
 
 So here's what we're going to do:
 ========================================================
@@ -15,8 +11,7 @@ So here's what we're going to do:
  1) Making better/more effective graphs
  
       - Enormous topic
-      - I'll show you a few examples of some graphs you may not have seen before
-      - You will have access to the literal source code of everything I show you.
+      - I'll show you an examples of a graph type you may not have seen before
 
  2) **Brief** introduction to Git/GitHub
 
@@ -44,25 +39,27 @@ incremental: true
 
 
 =======================================================
-Pie charts are bad at communicating the basics (scale, order, trends)
-
+Ironically, pie charts are bad at communicating the basics (scale, order, trends)
 
 Use a bar chart instead, or for trends across time, use a (single) stacked bar chart.
 
+
 No more grouped bar charts
 =======================================================
-
+<small>It is difficult to do meaningful visual comparison with grouped bar charts.</small>
 ![plot of chunk unnamed-chunk-1](Slides_rpres-figure/unnamed-chunk-1-1.png) 
 
 Do This Instead
 =====================================================
+<small>For these data, this graph better allows the audience to read the trend for themselves.</small>
 ![plot of chunk unnamed-chunk-2](Slides_rpres-figure/unnamed-chunk-2-1.png) 
 
 
-Oo! New graphs!
+Violin Jitter Plots
 ========================================================
+<small>Consider for data that has many observations distributed assymmetrically.</small>
 ![plot of chunk unnamed-chunk-3](Slides_rpres-figure/unnamed-chunk-3-1.png) 
-Graph tutorial credit: Zev Ross
+<smaller> Graph tutorial credit: Zev Ross </smaller>
 
 
 Good data visualization in the wild
@@ -94,7 +91,11 @@ GitHub
 <br>
 **77%** of you said you don't know what GitHub is.
 
-<small> So let's ctrl-click and [go to GitHub](http://www.github.com/) </small>
+<small> So let's ctrl-click and [go to GitHub](http://www.github.com/) 
+
+If you haven't yet created an account, go ahead and do that now.
+
+For more information, check out GitHub's extremely well-organized and written [help documentation](https://help.github.com/)</small>
 
 So GitHub is actually
 ========================================================
@@ -353,8 +354,13 @@ Tag life study (~1/64 of my dissertation)
 
 6. Clone to desktop again for revising. </small>
 
+Sidebar
 ===============
-this slide is blank on purpose
+At this point in the original presentation, I opened RStudio and worked through the Tag Life Study example.  A very similar .r script for that example can be found [here](http://github.com/Myfanwy/ggplot2Intro/blob/master/demo.r). 
+
+In the live presentation, I demonstrated the the process of creating a repository, linking it to a directory on my hard drive, running the r script, knitting and saving a PDF, and then committing and syncing the changes with the [GitHub client](https://mac.github.com/).  
+
+If you're accessing these slides later, you'll have to go through that process yourself, or check out [another good online tutorial](https://guides.github.com/activities/hello-world/).
 
 
 You promised us interactive visualizations
@@ -452,4 +458,3 @@ Carson Sievert, whose RMarkdown slides I forked from GitHub (see?  See how usefu
 <img src="http://i.giphy.com/b9QBHfcNpvqDK.gif">
 <br>
 
-Let's go eat a lot of food.
