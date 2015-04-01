@@ -26,3 +26,4 @@ The data organization and visualization resources you didn't know you had.  Mate
 
 [Carson Sievert's website full of dataviz goodies](http://cpsievert.github.io/)
 
+If you get discouraged, you're not alone - take a break and check out [commit logs from last night](http://www.commitlogsfromlastnight.com/)
