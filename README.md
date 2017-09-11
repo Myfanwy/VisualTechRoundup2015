@@ -12,7 +12,7 @@ The data organization and visualization resources you didn't know you had.  Mate
 
 ##Links:
 
-[Talk Slides](http://www.voovarb.com/VisualTechRoundup2015/#/)
+[Talk Slides](https://myfanwy.github.io/VisualTechRoundup2015/#/)
 
 [Jenny Bryan's Fields talk](http://www.fields.utoronto.ca/video-archive/static/2015/02/318-4374/mergedvideo.ogv)
 
